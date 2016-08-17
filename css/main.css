@@ -123,6 +123,78 @@
  }
 
 /* ==========================================================
+ * Speakers
+ * ========================================================== */
+
+ .speakers {
+ 	padding: 90px 0;
+
+ 	border-bottom: 2px solid #f0f0f1;
+ }
+
+ .speakers h2 {
+ 	color: #828689;
+ }
+
+ .speakers .large {
+ 	margin-bottom: 20px;
+
+ 	color: #828689;
+ 	
+ 	font-size: 22px;
+ }
+
+ .speakers .goals-tab {
+ 	border: 3px solid #ececec;
+ 	border-radius: 2px;
+ }
+
+ .speakers .goals-tab .nav-tabs li:not(.active) {
+ 	background-color: #ececec;
+ }
+
+ .speakers .goals-tab .nav-tabs li a {
+ 	color: #abb1ba;
+ }
+
+ .speakers .goals-tab .nav-tabs li.active a {
+ 	color: #9097a1;
+ }
+
+ .speakers .goals-tab .nav-tabs.nav-justified li a,
+ .speakers .goals-tab .nav-tabs.nav-justified li.active a,
+ .speakers .goals-tab .nav-tabs.nav-justified li.active a:focus,
+ .speakers .goals-tab .nav-tabs.nav-justified li.active a:hover {
+ 	border: none;
+ 	border-radius: 0;
+
+ 	font-family: "Ubuntu", sans-serif;
+ 	font-size: 18px;
+ 	font-weight: 700;
+ 	outline: 0;
+ }
+
+ .speakers .goals-tab .tab-content {
+ 	padding: 25px 20px;
+ }
+
+ .speakers .goals-tab .tab-content ul {
+ 	padding-left: 10px;
+ }
+
+ .speakers .goals-tab .tab-content ul li {
+ 	line-height: 30px;
+ }
+
+ .speakers .goals-tab .tab-content ul li i {
+ 	margin-right: 15px;
+
+ 	color: #2cc7c1;
+
+ 	font-size: 13px;
+ }
+
+/* ==========================================================
  * Media query
  * ========================================================== */
 
@@ -140,9 +212,9 @@
 
  @media screen and (max-width: 630px) {
 
-	.header {
-		min-height: 320px;
-	}
+ 	.header {
+ 		min-height: 320px;
+ 	}
 
  	.header-center {
  		max-width: 320px;
@@ -163,4 +235,4 @@
 
  @media screen and (max-width: 480px) {
 
- }
+ } 
