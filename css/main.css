@@ -195,6 +195,74 @@
  	font-size: 13px;
  }
 
+ .speakers-head {
+ 	margin-top: 100px;
+ 	margin-bottom: 60px;
+ }
+
+ .speakers-head h2 {
+ 	color: #6a7079;
+
+ 	text-transform: uppercase;
+ }
+
+ .speakers-main h3 {
+ 	color: #777a7d;
+
+ 	font-size: 20px;
+ 	text-transform: uppercase;
+ }
+
+ .speakers-main .item > div {
+ 	position: relative;
+ }
+
+ .speakers-main .item > div:hover .front {
+ 	opacity: 0.2;
+
+ 	cursor: pointer;
+ }
+
+ .speakers-main .item > div:hover .back {
+ 	opacity: 1;
+ }
+
+ .speakers-main .item > div:hover h3 {
+ 	color: #6bd8d3;
+ }
+
+ .speakers-main .item .front {
+ 	width: 140px;
+ 	height: 140px;
+ 	position: absolute;
+
+ 	/*For IE*/
+ 	left: 50%;
+ 	margin-left: -70px;
+ }
+ .speakers-main .item .back {
+ 	width: 140px;
+ 	height: 140px;
+ 	display: inline-block;
+
+ 	background-color: #6bd8d3;
+
+ 	border-radius: 50%;
+
+ 	opacity: 0;
+ }
+
+ .speakers-main .item div .back i {
+ 	color: #fff;
+
+ 	line-height: 140px;
+ 	font-size: 30px;
+ }
+
+ .speakers-footer {
+ 	margin-top: 70px;
+ }
+
 /* ==========================================================
  * Media query
  * ========================================================== */
@@ -205,10 +273,21 @@
 
  @media screen and (max-width: 992px) {
 
+	.speakers {
+		padding: 20px 0;
+	}
+
+	.speakers-head,
+	.speakers-footer {
+		margin: 20px 0;
+	}
  }
 
  @media screen and (max-width: 767px) {
-
+	
+	.speakers-main .item {
+		margin-bottom: 30px;
+	}
  }
 
  @media screen and (max-width: 630px) {
