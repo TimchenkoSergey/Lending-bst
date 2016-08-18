@@ -465,6 +465,26 @@
  }
 
 /* ==========================================================
+ * Sponsors
+ * ========================================================== */
+
+ .sponsors {
+ 	padding: 60px 0;
+
+ 	background-color: #fff;
+
+ 	text-align: center;
+ }
+
+/* ==========================================================
+ * Map
+ * ========================================================== */
+
+ .map iframe {
+ 	width: 100%;
+ }
+
+/* ==========================================================
  * Media query
  * ========================================================== */
 
@@ -472,6 +492,10 @@
 
  	.events .events-tab .time {
  		display: block;
+ 	}
+
+ 	.map iframe {
+ 		max-height: 500px;
  	}
  }
 
@@ -516,6 +540,18 @@
  		margin-bottom: 20px;
  		padding: 20px;
  	}
+
+ 	.sponsors {
+ 		padding: 20px 0 0;
+ 	}
+
+ 	.sponsors img {
+ 		margin-bottom: 20px;
+ 	}
+
+ 	.map iframe {
+ 		max-height: 400px;
+ 	}
  }
 
  @media screen and (max-width: 767px) {
@@ -526,6 +562,10 @@
 
  	.events .events-tab .collapse-link {
  		font-size: 16px;
+ 	}
+
+ 	.map iframe {
+ 		max-height: 300px;
  	}
  }
 
