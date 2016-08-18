@@ -376,7 +376,51 @@
  * Register form
  * ========================================================== */
 
+ .register {
+ 	padding: 90px 0;
 
+ 	background-color: #f3f3f3;
+ }
+
+ .register h2 {
+ 	margin-top: 60px;
+ }
+
+ .register .form-register {
+ 	margin-top: 50px;
+ 	padding: 40px;
+
+ 	background-color: #fff;
+
+ 	border-radius: 5px;
+ }
+
+ .register .form-register input,
+ .register .form-register select {
+ 	height: 44px;
+ 	padding-right: 30px;
+
+ 	background-color: #efefef;
+ }
+
+ .has-success .form-control-feedback {
+ 	color: #2cc1c1;
+ }
+
+ .has-success .form-control,
+ .register .form-register input.form-control:focus {
+ 	background-color: #fff;
+
+ 	border: 2px solid #95e3e0;
+
+ 	box-shadow: none;
+ }
+
+ .form-control-feedback {
+ 	right: 15px;
+
+ 	line-height: 44px;
+ }
 
 /* ==========================================================
  * Media query

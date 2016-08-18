@@ -13,4 +13,10 @@ $(function() {
 			.removeClass()
 			.addClass("fa fa-plus-circle");
 	});
+	$("#registerForm").validator({
+		feedback: {
+			success: "fa fa-check-circle",
+			error:   "fa fa-times-circle"
+		}
+	});
 });
