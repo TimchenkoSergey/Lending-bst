@@ -19,4 +19,7 @@ $(function() {
 			error:   "fa fa-times-circle"
 		}
 	});
+	$(".form-select").select2({
+		minimumResultsForSearch: Infinity
+	});
 });
