@@ -56,6 +56,18 @@
  	transition: 0.5s;
  }
 
+ .large {
+ 	margin-bottom: 20px;
+
+ 	color: #828689;
+ 	
+ 	font-size: 22px;
+ }
+
+ .link {
+ 	text-transform: uppercase;
+ }
+
 /* ==========================================================
  * Header 
  * ========================================================== */
@@ -134,14 +146,6 @@
 
  .speakers h2 {
  	color: #828689;
- }
-
- .speakers .large {
- 	margin-bottom: 20px;
-
- 	color: #828689;
- 	
- 	font-size: 22px;
  }
 
  .speakers .goals-tab {
@@ -264,30 +268,129 @@
  }
 
 /* ==========================================================
+ * Events
+ * ========================================================== */
+
+ .events {
+ 	padding: 90px 0;
+ }
+
+ .events .events-tab {
+ 	border: 3px solid #ececec;
+ 	border-radius: 2px;
+ }
+
+ .events .events-tab .nav-tabs li:not(.active) {
+ 	background-color: #ececec;
+ }
+
+ .events .events-tab .nav-tabs li a {
+ 	color: #abb1ba;
+ }
+
+ .events .events-tab .nav-tabs li.active a {
+ 	color: #9097a1;
+ }
+
+ .events .events-tab .nav-tabs.nav-justified li a,
+ .events .events-tab .nav-tabs.nav-justified li.active a,
+ .events .events-tab .nav-tabs.nav-justified li.active a:focus,
+ .events .events-tab .nav-tabs.nav-justified li.active a:hover {
+ 	border: none;
+ 	border-radius: 0;
+
+ 	font-family: "Ubuntu", sans-serif;
+ 	font-size: 18px;
+ 	font-weight: 700;
+ 	text-transform: uppercase;
+ 	outline: 0;
+ }
+
+ .events .events-tab .tab-content {
+ 	padding: 25px 20px;
+ }
+
+ .events .events-tab .tab-collapse {
+ 	margin-bottom: 25px;
+ }
+
+ .events .events-tab .time {
+ 	margin-right: 25px;
+ 	padding: 5px;
+
+ 	background-color: #2cc7c1;
+ 	color: #fff;
+
+ 	font-size: 17px;
+ 	font-weight: 500;
+ 	text-transform: uppercase;
+
+ 	border-radius: 2px;
+ }
+ .events .events-tab .collapse-link {
+ 	color: #747a84;
+
+ 	font-size: 18px;
+ 	font-weight: 500;
+ }
+
+ .events .events-tab .collapse-state {
+ 	color: #2cc7c1;
+ }
+
+ .events .events-tab .collapse p {
+ 	color: #999;
+ }
+
+ .events .row-video {
+ 	margin-top: 100px;
+ }
+
+/* ==========================================================
  * Media query
  * ========================================================== */
 
  @media screen and (max-width: 1200px) {
 
+ 	.events .events-tab .time {
+ 		display: block;
+ 	}
  }
 
  @media screen and (max-width: 992px) {
 
-	.speakers {
-		padding: 20px 0;
-	}
+ 	.speakers {
+ 		padding: 20px 0;
+ 	}
 
-	.speakers-head,
-	.speakers-footer {
-		margin: 20px 0;
-	}
+ 	.speakers-head,
+ 	.speakers-footer {
+ 		margin: 20px 0;
+ 	}
+
+ 	.events .link {
+ 		display: block;
+ 		margin-bottom: 20px;
+ 	}
+
+ 	.events .row-video {
+ 		margin-top: 30px;
+ 	}
+
+ 	.events .col-video {
+ 		margin-top: 30px;
+ 	}
  }
 
  @media screen and (max-width: 767px) {
-	
-	.speakers-main .item {
-		margin-bottom: 30px;
-	}
+
+ 	.speakers-main .item {
+ 		margin-bottom: 30px;
+ 	}
+
+ 	.events .events-tab .collapse-link {
+ 		font-size: 16px;
+ 	}
  }
 
  @media screen and (max-width: 630px) {
@@ -315,4 +418,7 @@
 
  @media screen and (max-width: 480px) {
 
+ 	.events .events-tab .collapse-link {
+ 		display: block;
+ 	}
  } 
